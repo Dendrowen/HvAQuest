@@ -30,8 +30,8 @@ public class LocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
 
-        ImageView imageView = (ImageView) findViewById(R.id.imageViewClue);
-        Button backButton = (Button) findViewById(R.id.buttonClue);
+        ImageView imageView =  findViewById(R.id.imageViewClue);
+        Button backButton =  findViewById(R.id.buttonClue);
 
         clue = getIntent().getIntExtra(QuestionActivity.questionKey, -1);
         imageView.setImageResource(imageNames[clue]);
